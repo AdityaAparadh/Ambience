@@ -1,0 +1,6 @@
+vlc
+cvlc
+pacmd
+jq
+pactl
+playerctl
