@@ -8,8 +8,16 @@ def is_media_playing():
         result = subprocess.run(['pacmd', 'list-sink-inputs'], capture_output=True, text=True, check=True)
         streams = result.stdout.split('index:')
         for stream in streams:
-            if 'state: RUNNING' in stream and 'VLC media player' not in stream:
-                return True
+            if 'state: RUNNING' in stream:
+                ignore_stream = False
+                for app in config['ignore_apps']:
+                    if app.lower() in stream.lower() or 'vlc' in stream.lower():
+                        ignore_stream = True
+                        break
+                if not ignore_stream:
+                    player_name = stream.split('application.name = ')[1].split('\n')[0].strip()
+                    print("External Media Playing :", player_name)
+                    return True
         return False
     except subprocess.CalledProcessError:
         return False
