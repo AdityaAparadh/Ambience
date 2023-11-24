@@ -48,12 +48,10 @@ cd Ambience
 3. Adjust `config.json` according to your preferences. Make sure `"path"` points to the directory where your music is stored.
 
   
-4. Run the `main.py` script:
+4. Run the `main.py` script using one of these commands:
 ```
 python main.py
 ```
-    OR
-
 ```
 python3 main.py
 ```
