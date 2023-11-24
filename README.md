@@ -49,6 +49,7 @@ cd Ambience
 
   
 4. Run the `main.py` script using one of these commands:
+
 ```
 python main.py
 ```
