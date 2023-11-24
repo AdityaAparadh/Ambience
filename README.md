@@ -23,7 +23,7 @@ Ambience allows users to customize the behavior according to their preferences t
 ```json
 {
     "path": "$HOME/Music/",
-    "peak_volume": 0.4,
+    "peak_volume": 0.5,
     "min_volume": 0,
     "formats": ["flac", "mp3", "ogg", "wav", "m4a"],
     "check_interval": 1,

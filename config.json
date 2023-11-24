@@ -1,9 +1,9 @@
 {
     "path": "$HOME/Music/",
-    "peak_volume": 1,
+    "peak_volume": 0.5,
     "min_volume":0,
     "formats": ["flac", "mp3", "ogg", "wav","m4a"],
-    "check_interval": 0.1,
+    "check_interval": 1,
     "fade_duration": 3,
     "fade_steps": 20
 }
