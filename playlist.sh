@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Extract music_dir from config.json
 music_dir=$(jq -r '.path' config.json)
 music_dir=$(echo $music_dir | envsubst)
 playlist_file="playlist.m3u"
