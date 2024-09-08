@@ -1,9 +1,8 @@
 {
-    "path": "$HOME/Music/",
-    "peak_volume": 0.5,
-    "min_volume":0,
-    "formats": ["flac", "mp3", "ogg", "wav","m4a"],
-    "check_interval": 1,
-    "fade_duration": 3,
-    "fade_steps": 20
+    "music_directory" : "/home/aditya/Music",
+    "max_volume" : 70,
+    "min_volume" : 40,
+    "fade_in_duration" : 2,
+    "fade_out_duration" : 2,
+    "file_extensions" : ["m4a", "mp3", "mp4", "mkv", "wav", "ogg" ]
 }
